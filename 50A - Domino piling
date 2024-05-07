@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  long long int a,b;
+  scanf("%lld %lld",&a,&b);
+  long long int x=(a*b)/2;
+  printf("%d",x);
+}
