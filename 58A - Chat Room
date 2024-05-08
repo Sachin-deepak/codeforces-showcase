@@ -1,0 +1,10 @@
+name=input()
+demo="hello"
+k=0
+for i in range(len(name)):
+    if name[i]==demo[k]:
+        k+=1
+    if k==5:
+        print("YES")
+        exit()
+print("NO")
