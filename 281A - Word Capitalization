@@ -1,0 +1,5 @@
+name=input()
+name=list(name)
+name[0]=name[0].upper()
+name=''.join(name)
+print(name)
