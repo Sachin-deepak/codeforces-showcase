@@ -1,0 +1,7 @@
+t=int(input())
+name=input()
+x=set(name.lower())
+if len(x)==26:
+    print('YES')
+else:
+    print('NO')
