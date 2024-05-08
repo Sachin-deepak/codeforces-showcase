@@ -1,0 +1,11 @@
+name=input()
+x=list(filter(lambda a:a.isupper(),name))
+total_length=len(name)
+upper_length=len(x)
+lower_length=(total_length)-(upper_length)
+if upper_length>lower_length:
+    result1=name.upper()
+    print(result1)
+elif (lower_length>upper_length) or (upper_length==lower_length):
+    result2=name.lower()
+    print(result2)
