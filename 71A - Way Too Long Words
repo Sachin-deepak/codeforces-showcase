@@ -1,0 +1,14 @@
+inp=int(input())
+for i in range(1,inp+1):
+    name=input()
+    y=len(name)
+    x=y-1
+    a=name[0]
+    b=name[x]
+    if(y>10):
+        length=y-2
+        length=str(length)
+        result="".join(a)+"".join(length)+"".join(b)
+        print(result)
+    else:
+        print(name)
