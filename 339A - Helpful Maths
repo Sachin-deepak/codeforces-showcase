@@ -1,0 +1,3 @@
+name=list(input().split("+"))
+name.sort()
+print("+".join(i for i in name))
