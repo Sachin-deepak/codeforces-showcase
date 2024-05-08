@@ -1,0 +1,14 @@
+t=int(input())
+name=input()
+length_a=0
+for i in name:
+    if i=='A':
+        length_a+=1
+total_length=len(name)
+length_b=(total_length)-(length_a)
+if length_a>length_b:
+    print('Anton')
+elif length_b>length_a:
+    print('Danik')
+elif length_a==length_b:
+    print('Friendship')
