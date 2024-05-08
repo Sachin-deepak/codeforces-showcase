@@ -1,0 +1,9 @@
+name=input()
+name2=input()
+name=list(name)
+name.reverse()
+ans="".join(name)
+if ans==name2:
+    print('YES')
+else:
+    print('NO')
