@@ -1,17 +1,14 @@
 def solve(n, k, s):
     ch = sorted(set(s))
     if k > n:
-        return s + ch[0] * (k - 1)
+        return s + ch[0] * (k - n)
     s = list(s[:k])
     
     for i in range(k-1, -1, -1):
         for j in ch:
             if j > s[i]:
                 s[i] = j
-                print(s)
-                for k in range(i+1, k):
-                    s[k] = ch[0]
-                    print(s)
+                s[i+1:k] = ch[0] * (k - i - 1)
                 return ''.join(s)
     return ''.join(s)
 
